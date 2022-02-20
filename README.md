@@ -4,8 +4,6 @@
 
 **tab** is a simple hash table library for string key-value pairs.
 
-## Example Snippet
-
 ```c
 tab *mytable = tabnew(rand());
 
@@ -52,3 +50,7 @@ Delete an entry from the table.
 void tabprint(tab *table);
 ```
 Print the contents of the hashtable.
+
+## License
+
+This project is licensed under the GNU GPLv3. See the [license file](LICENSE).
