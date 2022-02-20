@@ -2,11 +2,9 @@
 
 ## Description
 
-**tab** is a simple hash table implementation for string key-value pairs.
+**tab** is a simple hash table library for string key-value pairs.
 
-## Example
-
-Here is an example snippet to show how **tab** is used:
+## Example Snippet
 
 ```c
 tab *mytable = tabnew(rand());
@@ -15,7 +13,7 @@ tabset(mytable, "this is a key", "this is a value");
 
 puts(tabget(mytable, "this is a key")); /* "this is a value" */
 
-tabdel(mytable, "this is a key"); /* it's gone! */
+tabdel(mytable, "this is a key"); /* :o it's gone! */
 
 tabfree(mytable);
 ```
@@ -32,7 +30,7 @@ Create a hash table structure. You need to supply a (preferably) random number t
 ```c
 void tabfree(tab *table);
 ```
-Free all memory in a table.
+Free all memory in a hash table.
 
 ```c
 void tabset(tab *table, char *key, char *value);
@@ -53,4 +51,4 @@ Delete an entry from the table.
 ```c
 void tabprint(tab *table);
 ```
-Print the contents of the hashtable. This is mostly for debugging purposes.
+Print the contents of the hashtable.
