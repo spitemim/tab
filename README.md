@@ -1,3 +1,5 @@
+# DON'T USE THIS! the hash function will return different hashes as the table gets bigger. i'm too lazy to fix this, but it doesn't work, so don't use it.
+
 # tab - A simple hash table
 
 ## Description
